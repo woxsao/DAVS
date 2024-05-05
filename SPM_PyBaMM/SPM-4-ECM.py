@@ -7,7 +7,7 @@ import pybamm
 import numpy as np
 import matplotlib.pyplot as plt
 
-import pybamm.mz_develop.output_module as outmod
+#import pybamm.mz_develop.output_module as outmod
 
 #%%
 
@@ -60,8 +60,8 @@ solution = sim.solve(calc_esoh=False)
 
 
 #%%
-output_variables = outmod.output_variables_spm_par
-sim.plot(output_variables,time_unit="minutes")  
+#output_variables = outmod.output_variables_spm_par
+sim.plot(time_unit="minutes")  
 
 #%%
 time_in_sec = solution["Time [s]"].entries
